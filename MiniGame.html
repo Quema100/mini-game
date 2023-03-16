@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Mini game</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link href="./css/Mini Game.css" rel="stylesheet">
+    </head>
+    <body class="container"
+    oncontextmenu="return false" 
+    ondragstart="return false" 
+    onselectstart="return false"
+    >
+    <div style="position: relative; display: inline-block;">
+        <div style="position: absolute; display: flex;width: 100%; align-items: center; padding: 20px;">
+            <!---player-체력--->
+            <div id="players">
+                <div style="background-color: yellow; height: 30px; width: 100%;"></div>
+                <div id="playerhp"></div>
+            </div>
+            <!---시간--->
+            <div id="timer" style="background-color: red; width: 100px; height: 100px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 50px;">10</div>
+            <!---player2-체력--->
+            <div id="player2s" >
+                <div style="background-color: yellow; height: 30px;"></div>
+                <div id="player2hp" ></div>
+            </div>
+            <div></div>
+        </div>
+        <div id="displayText">무승부</div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="popup">
+        <h1>플레이해주셔서 감사합니다!</h1>
+        <p>
+            다시 플레이하시려면 새로고침을 해주세요 <br/>
+            버튼을 누르시면 메인 화면으로 돌아갑니다
+        </p>
+        <a href="/start.html">돌아가기</a>
+    </div>
+    <script src ="./js/Mini Game.js"></script>
+    </body>
+</html>
